@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Ремонт телевизоров в Орле</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" />
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script> 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="css/contact.css">
+<meta name='yandex-verification' content='40fe1f1e67ffd317' />
+<meta name="google-site-verification" content="aB2tZ0cRnfbHwX64DHrJ3tG-KDER3xvWSuKLdTqCPEI" />
+<meta HTTP-EQUIV="Content-language" CONTENT="ru-RU"> 
+<meta NAME="description" CONTENT="У нас Вы можете закать качественный ремонт Вашего телевизора в Орле по низким ценам">
+<meta NAME="keywords" CONTENT="ремонт, компьютеров, ноутбуков, орел,орле, сервис, модернизация, мастер, root, help,орёл,почника,тех,техника,ремонт телевизоров в орле,remontorel,remont orel, remontorel.space,remontorel space">
+<meta NAME="AUTHOR" CONTENT="Vs">
+
+<style>
+/*body background */
+body{background:#d1d1d1}
+
+/*Navbar effect */
+.navbar-brand { position: relative; z-index: 2; }
+.navbar-nav.navbar-right .btn { position: relative; z-index: 2; padding: 4px 20px; margin: 10px auto; }
+.navbar .navbar-collapse { position: relative; }
+.navbar .navbar-collapse .navbar-right > li:last-child { padding-left: 22px; }
+.navbar .nav-collapse { position: absolute; z-index: 1; top: 0; left: 0; right: 0; bottom: 0; margin: 0; padding-right: 120px; padding-left: 80px; width: 100%; }
+.navbar.navbar-default .nav-collapse { background-color: #f8f8f8; }
+.navbar.navbar-inverse .nav-collapse { background-color: #222; }
+.navbar .nav-collapse .navbar-form { border-width: 0; box-shadow: none; }
+.nav-collapse>li { float: right; }
+.btn.btn-circle { border-radius: 50px; }
+.btn.btn-outline { background-color: transparent; }
+@media screen and (max-width: 767px) {
+ .navbar .navbar-collapse .navbar-right > li:last-child { padding-left: 15px; padding-right: 15px; } 
+ .navbar .nav-collapse { margin: 7.5px auto; padding: 0; }
+ .navbar .nav-collapse .navbar-form { margin: 0; }
+ .nav-collapse>li { float: none; }
+}
+</style>
+<script src="js/main.js"></script>
+<link rel="shortcut icon" href="img/logo.jpg">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="img/logo.jpg">
+  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="img/logo.jpg">
+  <link rel="apple-touch-icon-precomposed" href="img/logo.jpg">
+</head>
+<body>
+ 
+<div class="container-fluid">
+ <!-- Second navbar for categories -->
+ <nav class="navbar navbar-default">
+ <div class="container">
+ <!-- Brand and toggle get grouped for better mobile display -->
+ <div class="navbar-header">
+ <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-1">
+ <span class="sr-only">Toggle navigation</span>
+ <span class="icon-bar"></span>
+ <span class="icon-bar"></span>
+ <span class="icon-bar"></span>
+ </button>
+ <a class="navbar-brand" href="#">Ремонт телевизоров Орёл!</a>
+ </div>
+ 
+ <!-- Collect the nav links, forms, and other content for toggling -->
+ <div class="collapse navbar-collapse" id="navbar-collapse-1">
+ <ul class="nav navbar-nav navbar-right">
+ <li><a href="index.html">Главная</a></li>
+ <li><a href="about.html">Обо мне</a></li>
+ <li><a href="contact.html">Контакты</a></li>
+
+ 
+ </div><!-- /.navbar-collapse -->
+
+ </nav><!-- /.navbar -->
+ <div style="text-align:center">
+    <h2>Оставьте заявку и мы свяжемся с вами.</h2>
+
+  </div>
+  <div class="row">
+    <div class="column">
+      <div id="map" style="width:100%;height:500px"></div>
+    </div>
+    <div class="column">
+      <form action="mail.php" method="POST">
+        <label for="fname">Ваше ФИО</label>
+        <input type="text" id="fname" name="user_name" placeholder="Ваше ФИО..">
+        <label for="lname">Ваш E-mail</label>
+        <input type="text" id="lname" name="user_mail" placeholder="Ваш E-mail..">
+        <label>Ваш номер телефона</label>
+        <input type="text"  id="tname" name="user_phone" placeholder="Введите ваш номер телефона..">
+        <label for="subject">Ваше сообщение</label>
+        <textarea id="subject" name="user_subject" placeholder="Введите ваше сообщение.." style="height:170px"></textarea>
+        <button type="submit" value="Отправить" class="btn-success">Отправить</button>
+      </form>
+    </div>
+  </div>
+</div>
+
+<!-- Initialize Google Maps -->
+<script>
+function myMap() {
+  var myCenter = new google.maps.LatLng(53.006831, 36.146233);
+  var mapCanvas = document.getElementById("map");
+  var mapOptions = {center: myCenter, zoom: 14};
+  var map = new google.maps.Map(mapCanvas, mapOptions);
+  var marker = new google.maps.Marker({position:myCenter});
+  marker.setMap(map);
+}
+</script>
+
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDWR-23N2HLBm98LirKwPpIdaKyh0Vo0Oc&callback=myMap"></script>
+<!--
+To use this code on your website, get a free API key from Google.
+Read more at: https://www.html5css.ru/graphics/google_maps_basic.php
+-->
+<div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter hdpe">
+                <img src="img/phone.png" class="img-responsive">
+            </div>
+
+            <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter sprinkle">
+                <img src="img/wa.png" class="img-responsive">
+            </div>
+
+            <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter hdpe">
+                <img src="img/pochta.png" class="img-responsive">
+            </div>
+
+<div class="pust"></div>
+
+ 
+ <div class="footer text-center">
+            <p class="small">Alright's reserved!</p>
+    </div>
+    <div class="col-md-12 col-xs-12">
+
+    <div class="footer text-center">
+            <p class="small">&#169; 2019 Vs</p>
+        </div>
+
+</div>
+
+  </div><!-- /.container -->
+ 
+
+ 
+</body>
+
+
+
+
+
+
+
+
+
+
+</html>
